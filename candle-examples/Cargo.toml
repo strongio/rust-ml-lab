@@ -1,0 +1,20 @@
+[package]
+name = "candle-examples"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0.81", optional = true }
+candle-core = "0.4.1"
+candle-nn = "0.4.1"
+clap = { version = "4.5.2", features = ["derive"], optional = true }
+rand = { version = "0.8.5", optional = true }
+
+[[example]]
+name = "mnist"
+
+[[example]]
+name = "gpt-rs"
+required-features = ["anyhow", "clap", "rand"]
