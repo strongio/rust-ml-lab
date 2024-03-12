@@ -27,3 +27,6 @@ The following command will build and run on a CPU-only machine:
 cargo run --  --input-image 'media/frida-kahlo.jpg' --prompt 'A colorful portrait painting in the style of Frida Kahlo' --cpu 'all'
 ```
 
+### Notes
+- I ran into issues passing non-square images. Works with 512x512 images.
+- Only tested on macOS with `--cpu 'all'` flag.
