@@ -27,6 +27,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ### 4. `control-net-rs`
  
- - An example of ControlNet in Rust. This example makes use of two ML focused crates:
-   - `tch-rs`: Rust bindings for the PyTorch C++ API
-   - `diffusers-rs`: A Rust implementation of HuggingFace's Diffusers Python library. Written with `tch`.
+- An example of ControlNet in Rust. This example makes use of two ML focused crates:
+  - `tch-rs`: Rust bindings for the PyTorch C++ API
+  - `diffusers-rs`: A Rust implementation of HuggingFace's Diffusers Python library. Written with `tch`.
+
+### 5. `candle-examples`
+
+- Introduces `candle`, a minimalist ML framework for Rust
+- Contains two examples
+  - `mnist`: Builds a simple two-layer model to classify MNIST digits
+  - `gpt-rs`: Rust implementation of Andrej Karpathy's "Let's build GPT" tutorial
