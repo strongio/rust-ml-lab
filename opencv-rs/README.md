@@ -1,5 +1,7 @@
 # Opencv and Rust on macOS
 
+![edges](.media/edges.png)
+
 ## Setup
 
 ### Install OpenCV
@@ -34,3 +36,16 @@ Build and run like any other Rust crate:
 ```bash
 cargo run --release
 ```
+
+## Bonus:
+
+Try some of the examples from the `opencv` create [repo](https://github.com/twistedfall/opencv-rust/tree/master/examples) including:
+- [Face detection](https://github.com/twistedfall/opencv-rust/blob/master/examples/video_facedetect.rs)
+- [ORB feature detection](https://github.com/twistedfall/opencv-rust/blob/master/examples/video_features.rs)
+
+## DOUBLE Bonus:
+
+Try reconfiguring to include multiple examples (similar to how it's done in `candle-examples`)
+- Write each example in its own `/examples/<example>/main.rs` file
+- Configure each example in the `Cargo.toml` file
+- Run each example with `cargo run --example <example>`

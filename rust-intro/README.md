@@ -71,8 +71,8 @@ use rand::{thread_rng, Rng};
 
 fn main() {
     // Generate a random number between 1 and 100
-    let mut rng: ThreadRng = thread_rng();
-    let n: isize = rng.gen_range(1..100);
+    let mut rng = thread_rng();
+    let n = rng.gen_range(1..100);
 
     // Call the fib function
     let sum: u128 = fib(n);
